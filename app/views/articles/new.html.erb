@@ -1,0 +1,13 @@
+<div class="header">
+  <h3><%= link_to "Wikinimous", articles_path %></h3>
+  <p><%= link_to "New Article", new_article_path %></p>
+</div>
+
+<h1>New article</h1>
+<%= simple_form_for @article do |f| %>
+  <%= f.input :title, label: "Title" %>
+  <%= f.input :content, label: "Content" %>
+  <%= f.submit name="Create Article" %>
+<% end %>
+
+<%= link_to "Back", articles_path %>

@@ -1,0 +1,13 @@
+<div class="header">
+  <h3><%= link_to "Wikinimous", articles_path %></h3>
+  <p><%= link_to "New Article", new_article_path %></p>
+</div>
+
+<h1><%= @article.title %></h1>
+<p><%= link_to "Edit", edit_article_path %></p>
+<p><%= link_to "Delete", article_path(@article), method: :delete %></p>
+
+
+<p><%= @article.content %></p>
+
+<%= link_to "Return to articles", articles_path %>
