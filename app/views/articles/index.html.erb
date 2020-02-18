@@ -3,7 +3,7 @@
   <p><%= link_to "New Article", new_article_path %></p>
 </div>
 
-<div>
+<div class="container justify-center">
   <% @articles.each do |article| %>
     <h2> <%= link_to "#{article.title}", article_path(article) %></h2>
     <p><%= article.content %></p>
